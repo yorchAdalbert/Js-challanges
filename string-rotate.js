@@ -4,6 +4,8 @@ const rotate = str => {
     const rotatedWordArr = []
     let currentWord = str
 
+    if (str === '') return rotatedWordArr
+
     for (let i = 1; i < str.length; i++) {
         let lastLetter = ''
         let rotatedWord = ''
